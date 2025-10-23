@@ -145,7 +145,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
                             vertical: 8,
                           ),
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.2),
+                            color: Colors.white.withValues(alpha: 0.2),
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Row(
@@ -187,7 +187,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
                               width: 48,
                               height: 48,
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.2),
+                                color: Colors.white.withValues(alpha: 0.2),
                                 shape: BoxShape.circle,
                               ),
                               child: Center(
@@ -322,8 +322,9 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
                                               ),
                                               boxShadow: [
                                                 BoxShadow(
-                                                  color: buttonColor
-                                                      .withOpacity(0.3),
+                                                  color: buttonColor.withValues(
+                                                    alpha: 0.3,
+                                                  ),
                                                   blurRadius: 8,
                                                   offset: const Offset(0, 4),
                                                 ),
@@ -336,7 +337,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
                                                   height: 32,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white
-                                                        .withOpacity(0.3),
+                                                        .withValues(alpha: 0.3),
                                                     shape: BoxShape.circle,
                                                   ),
                                                   child: Center(
